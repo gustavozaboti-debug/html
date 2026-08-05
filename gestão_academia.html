@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Portal do Professor Jorge</title>
+</head>
+<body>
+    <header>
+        <h1> Portal do Professor Jorge</h1>
+        <p>Ususário Logado: Prof. Jorge</p>
+        <button type="button">Sair do Sistema</button>
+        <hr>
+    </header>
+    
+    <main>
+        <section> <h2> Lançar Nova Avanliação/Atividade:</h2>
+        <form>
+            <label for="titulo_aval"> Nome Avaliação:</label><br>
+            <input type="text" id="titulo_aval" placeholder="Ex: Peso" required><br><br>
+
+            <label for="exercicio"> Exercicio:</label><br>
+            <select id="disciplina" required>
+                <option value=""> Selecione o exercicio...</option>
+                <option value="sarrada"> Elevação Pelvica </option>
+                <option value="remada"> Serrote </option>
+                <option value="supino"> Supino </option>
+            </select><br><br>
+
+            <label for="peso"> Peso da série </label>
+            <input type="nuber" id="peso" max="100" step="1" required><br><br>
+
+            <label for="ficha"> Ficha de Treino(.pdf)</label><br>
+            <label type="file" id="ficha" accept=".pdf"> </label><br>
+
+            <button type="submit"> Lançar Avaliação</button>
+            </form>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2> Desemprenho dos alunos</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th rowspan="2"> Matricula</th>
+                        <th rowspan="2"> Nome do Aluno</th>
+                        <th rowspan="2"> Notas Avaliativas</th>
+                        <th rowspan="2"> Média Final</th>
+                        <th rowspan="2"> Presença(%)</th>
+                        <th rowspan="2"> Situação</th>
+                    </tr>
+                    <tr>
+                        <th> Nota 1 </th>
+                        <th> Nota 2</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1234</td>
+                        <td> Sabrina </td>
+                        <td>9</td>
+                        <td>8.5</td>
+                        <td> 95%</td>
+                        <td> Aprovado</td>
+                    </tr>
+
+                    <tr>
+                        <td>1234</td>
+                        <td> Sabrina </td>
+                        <td>9</td>
+                        <td>8.5</td>
+                        <td> 95%</td>
+                        <td> Aprovado</td>
+                    </tr>
+
+                    <tr>
+                        <td>1234</td>
+                        <td> Sabrina </td>
+                        <td>9</td>
+                        <td>8.5</td>
+                        <td> 95%</td>
+                        <td> Aprovado</td>
+                    </tr>
+
+                    <tr>
+                        <td>1234</td>
+                        <td> Sabrina </td>
+                        <td>9</td>
+                        <td>8.5</td>
+                        <td> 95%</td>
+                        <td> Aprovado</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="4"><strong> Média Geral</strong></td>
+                        <td><strong> 8.00</strong></td>
+                        <td colspan="2"><strong> Frequência media: 91,25%</strong></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+    </main>
+</body>
+</html>
