@@ -1,78 +1,111 @@
-body {
+{
+    box-sizing: border-box
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow' Ariel, sans-serif;
+}
+
+body{
+    background-color:aliceblue;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background: #eee;
+    padding: 20px;
+    color: #333;
+
 }
 
-form {
-    background: #fff;
-    padding: 20px;
-    border-radius: 5px;
+.card{
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 340px;
+    box-shadow: 0 34px 12px rgba(0, 0, 0, 0.08);
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    width: 280px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    gap: 14px;
+
 }
 
-.card-home {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    width: 280px;
+h2{
     text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: #222222;
+    font-size: 20px;
+    margin-bottom: 5px;
 }
 
-input, button {
-    padding: 10px;
+.form-graup{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+label{
+    font-size: 13px;
+    color: #555555;
+}
+
+input{
+    padding: 9px 10px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
     font-size: 14px;
-    border-radius: 4px;
+    outline: none;
 }
 
-input {
-    border: 1px solid #ccc;
+input:focus{
+    border-color: #007bff;
+    
 }
 
-button {
-    background: #007bff;
-    color: #fff;
+.bnt-principal{
+    background-color: #007bff;
+    color: #ffffff;
     border: none;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 14px;
     cursor: pointer;
-    transition: background 0.2s;
+    margin-top: 5px;
+    transition: 25ms ease-in-out;
 }
 
-button:hover {
-    background: #0056b3;
+.bnt-principal:hover{
+    background-color: #0056b3;
+
 }
 
-.btn-secundario {
-    background: #6c757d;
+.bnt-secundario{
+    background: none;
+    border: 1px solid #007bff;
+    color: #007bff;
+    padding: 1px;
+    border-radius: 6px;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
 }
 
-.btn-secundario:hover {
-    background: #545b62;
+.bnt-secundario:hover{
+    background-color: #f0f7ff;
+
 }
 
-.detalhes-treino {
-    margin-top: 10px;
-    text-align: left;
+.mensagem{
+    font-size: 13px;
+    text-align: center;
+    min-height: 18px;
+
 }
 
-.titulo-treino {
-    margin: 10px 0 5px 0;
-    font-size: 15px;
+.mensagem.erro{
+    color: #d9534f;
 }
 
-.lista-exercicios {
-    padding-left: 20px;
-    margin: 0;
-    line-height: 1.5;
+.mensagem.sucesso{
+    color: #28a745;
 }

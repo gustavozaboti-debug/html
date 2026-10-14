@@ -1,28 +1,46 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title> Cadastro </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar Conta</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form id="formCadastro">
-        <h2> Cadastrar usuário </h2>
-        <input type ="text" id="novoUsuario" placeholder="Novo Usuário" required>
-        <input type="password" id="novaSenha" placeholder="Nova Senha" required>
-        <button type="submit"> Concluir cadastro </button>
-        <button type="button" id="btnVoltarHome" class="btn-secundario"> Voltar </button>
-    </form>
+    
+    <class="card">
+        <h2> Criar Conta </h2>
 
-    <script src="script.js"></script>
-    <script>
-        const usuarioLogado = localStorage.getItem('usuarioLogado')
-        if(!usuarioLogado){
-            window.location.href = 'index.html';
-        }
+        <div class="form-group">
+            <label for="nome"> Nome Completo</label>
+            <input type="text" id="nome" placeholder="Digite seu nome">
+        </div>
 
-        document.getElementById('btnVoltarHome').addEventListener('click', function (){
-            window.location.href = 'home.html';
-        })
-    </script>
+        <div class="form-group">
+            <label for="nascimento"> Data de nascimento</label>
+            <input type="date" id="nascimento">
+        </div> 
+
+        <div class="form-group">
+            <label for="cpf">CPF</label>
+            <input type="text" id="cpf" placeholder="000.000.000-00">
+        </div>
+
+    <div class="form-group">
+        <label for="telefone">Telefone</label>
+        <input type="tel" id="telefone" placeholder="(00) 00000-0000">
+    </div>
+    
+    <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Digite seu email">
+    </div>
+
+    <button type="button" class="btn-principal" id="btnSalvar">Cadastrar</button>
+    <a href="index.html" class="btn-secundario">Voltar para o Login</a>
+
+    <div class="mensagem" id="mensagemCadastro"></div>
+</div>
+<script src="cadastro.js"></script>
 </body>
 </html>
